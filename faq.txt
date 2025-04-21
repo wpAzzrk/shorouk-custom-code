@@ -1,0 +1,87 @@
+/*faq*/
+/**********************************************/
+
+document.addEventListener("DOMContentLoaded", () => {
+    // إنشاء عنصر الحاوية الرئيسي
+    const faqSection = document.createElement("section");
+    faqSection.id = "faq-section";
+    faqSection.style.cssText = `
+        background-color:transparent;
+        padding: 2rem;
+        margin: 2rem auto;
+        width: 90%; /* العرض 90% من حجم الشاشة */
+        max-width: 800px; /* أقصى عرض للقسم */
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px 4px #0A192C;
+       background-image: url(https://media.zid.store/20a7d76d-e85b-4fd1-a39e-a3a3fbd21fee/69a59cc3-4373-4d78-916d-d8638efa6f35.svg);
+    `;
+
+    // إضافة عنوان القسم
+    const faqTitle = document.createElement("h2");
+    faqTitle.innerText = "الأسئلة الشائعة";
+    faqTitle.style.cssText = `
+        text-align: center;
+        color: #000;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem; /* حجم الخط يناسب الشاشات */
+    `;
+    faqSection.appendChild(faqTitle);
+
+    // البيانات الخاصة بالأسئلة الشائعة
+    const faqData = [
+        {
+            question: "ما هي خيارات الدفع المتوفرة؟",
+            answer: "يمكنك الدفع باستخدام مدى، البطاقات الائتمانية، Apple Pay ، Stc Pay "
+        },
+        {
+            question: "كم يستغرق توصيل الطلب؟",
+            answer: "عادةً ما يتم توصيل الطلبات خلال 7 - 14 يوم عمل."
+        },
+        {
+            question: "هل يمكنني استرجاع المنتجات؟",
+            answer: "نعم، يمكنك استرجاع المنتجات خلال 7 أيام من استلامها وفقًا لسياسة الإرجاع."
+        },
+    ];
+
+    // إنشاء الأسئلة والإجابات
+    faqData.forEach(({ question, answer }) => {
+        const questionContainer = document.createElement("div");
+        questionContainer.style.cssText = `
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.5rem;
+        `;
+
+        const questionEl = document.createElement("h3");
+        questionEl.innerText = question;
+        questionEl.style.cssText = `
+            cursor: pointer;
+            margin: 0;
+            color:#fff;
+            font-size: 1.2rem;
+        `;
+
+        const answerEl = document.createElement("p");
+        answerEl.innerText = answer;
+        answerEl.style.cssText = `
+            display: none;
+            margin-top: 0.5rem;
+            color: #FF6501;
+            font-size: 1rem;
+        `;
+
+        // إضافة تفاعل النقر
+        questionEl.addEventListener("click", () => {
+            const isVisible = answerEl.style.display === "block";
+            answerEl.style.display = isVisible ? "none" : "block";
+        });
+
+        questionContainer.appendChild(questionEl);
+        questionContainer.appendChild(answerEl);
+        faqSection.appendChild(questionContainer);
+    });
+
+    // إضافة القسم قبل الفوتر
+    const footer = document.querySelector("footer");
+    footer.parentNode.insertBefore(faqSection, footer);
+});

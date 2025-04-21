@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+.navbar-brand img {
+    margin-top: 1rem;
+    max-height: 6rem;
+}
+body * {
+  font-family: "El Messiri", sans-serif;
+}
+.index .main-nav-container:not(.main-nav-container.fixed-pinned.fixed-header) * {
+    color: #fff;
+}
+.index .main-menu .sub-menu {
+    background-color: var(--m-color);
+}
+/* global */
+@media (min-width: 768px) {
+    .md\:mb-\[111px\] {
+        margin-bottom: 50px;
+    }
+}
+/*header*/
+.head_img .max-w-\[60\%\] {
+    max-width: 100%;
+    width: 100%;
+}
+.head_img .rtl\:justify-end:where([dir=rtl],[dir=rtl] *) {
+    justify-content: center;
+}
+.head_img .mb-4 * {
+    color: #fff;
+}
+.head_img .mt-\[13rem\] {
+    margin-top: 4rem;
+}
+@media (min-width: 1024px) {
+ .head_img .max-w-\[60\%\] {
+    max-width: 100%;
+    width: 61%;
+}
+    .head_img .lg\:mt-\[18rem\] {
+        margin-top: 0;
+    }
+    .head_img.lg\:h-\[120vh\] {
+        height: 100vh;
+    }
+}
+/* ads bar */
+.marquee.bg-\[\#424242\]{
+color:white;
+background-color:#2AA5E0
+}
+
+/* categories */
+.categories ul {
+gap:2rem;
+justify-content:center
+}
+.categories,
+.s-block--best-offers {
+margin-bottom:2rem
+}
+/* products */
+.s-product-card-content-title a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* offers */
+.furnitur_offer  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 500px;
+    padding: 1rem;
+}
+.furnitur_offer .w-full:has(salla-button) {
+    margin-top: 1rem;
+}
+@media (min-width: 728px) {
+    .furnitur_offer {
+        height: auto;
+    }
+}
+ .furnitur_offer .flex.flex-col.justify-center.items-center.bg-\[var\(--f-color\)\] {
+    background-color: transparent;
+}
+
+/* rooms */
+.rooms h1{
+color:white
+}
+
+/* double-banner */
+.double-banner *{
+color:white;
+border-color:White
+}
+.double-banner .justify-start {
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 38%;
+}
+/* info */
+.color-black * {
+color:black!important;
+border-bottom-color: black!important;
+}
+
+.color-black .bg-\[var\(--m-color\)\] {
+    background-color: black;
+}
+
+/* banner */
+.banner .justify-start {
+    justify-content: center;
+}
+
+/* info */
+.media .bg-\[var\(--f-color\)\] {
+    background-color: var(--m-color);
+}
+
+.media .text-\[var\(--m-color\)\] {
+    color: white
+}
+/*footer*/
+footer.\!bg-transparent {
+background-color: var(--m-color) !important;}
+.store-footer__inner * {
+    color: #fff;
+}
+@media (max-width:767px){
+.head_img.h-\[70vh\] {
+    height: 50vh;
+}
+.furnitur_offer  h1 {
+    text-align: center;
+    max-width: 100%;
+}
+.double-banner .left-\[10\%\] {
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+
+
+
+/* Edit Product Page Start */
+.s-add-product-button-main {
+  display: flex;
+  width: 100% !important;
+  gap: 0.625rem;
+}
+.s-add-product-button-main .s-add-product-button-mini-checkout,
+.s-add-product-button-main>salla-button {
+  width: 50% !important;
+}
+.s-add-product-button-mini-checkout-content {
+  direction: rtl;
+  display: flex;
+}
+.s-add-product-button-main .s-add-product-button-mini-checkout span svg {
+  margin-right: 0;
+  margin-left: .375rem;
+  width: 1rem;
+  position: relative;
+  top: -3px;
+}
+
+.s-add-product-button-main .s-add-product-button-mini-checkout path {
+  stroke: var(--m-color);
+  fill: var(--m-color);
+}

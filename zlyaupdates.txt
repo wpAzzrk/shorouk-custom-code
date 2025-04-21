@@ -1,0 +1,170 @@
+button.s-slider-next.s-slider-nav-arrow.swiper-button-disabled.swiper-button-lock,button.s-slider-prev.s-slider-nav-arrow.swiper-button-disabled.swiper-button-lock,footer salla-apps-icons.lg\:col-span-2.rtl\:lg\:pr-20.ltr\:lg\:pl-20.hydrated,salla-contacts.s-contacts.s-contacts-header,salla-menu a[href="https://zylaglam.com/about-us/page-455121477"].s-menu-footer-item,salla-menu a[href="https://zylaglam.com/الأسئلة-الشائعة/page-597225288"],salla-menu a[href="https://zylaglam.com/تواصل-معنا/page-1296752472"]{display:none}@font-face{font-family:"Ara Etab Almonie";src:url("https://res.cloudinary.com/dlwi3zrhs/raw/upload/v1728456677/czmleyivopqpzhfp9evj.woff2") format("woff2"),url("https://res.cloudinary.com/dlwi3zrhs/raw/upload/v1728456677/zihgcipyqgyoizsk1bjn.woff") format("woff");font-weight:400;font-style:normal}:root{--second-color:#fff}.app-inner,html{overflow-x:hidden}body{background-color:var(--second-color)!important}a.navbar-brand{order:3}div#mainnav{box-shadow:none}.index div#mainnav:not(#mainnav.fixed-pinned.fixed-header),.index header.store-header{background-color:#f0eeeb}.s-user-menu-trigger{background-color:rgb(255 255 255 / 0%)}@media only screen and (min-width:1024px){#mainnav div:has(a[href="#mobile-menu"]).items-center{width:80%;justify-content:space-between}a.navbar-brand{width:50%;padding-right:10%}.main-menu{margin-right:0}.index div#mainnav:not(#mainnav.fixed-pinned.fixed-header){position:absolute;z-index:2;width:100%;background-color:#f0eeeb}}.banner--fixed img{background-color:transparent;margin:auto}[dir=rtl] salla-slider.photos-slider .swiper{padding:0!important}.s-block salla-slider.photos-slider .swiper-slide{margin:0;width:100%}.carousel-slider .swiper-wrapper>div:first-of-type{padding:0}.s-block:first-of-type{margin-top:0}.s-block--banners .s-block__title{justify-content:center}.itemRight,.tabs.hide-scroll{display:flex;justify-content:center}.s-block__title h2{font-family:"Ara Etab Almonie",sans-serif;font-size:44px;font-weight:400;line-height:60px}.s-block--banners{margin-bottom:6rem}.s-block--banners .s-block__title .right-side:where([dir=rtl],[dir=rtl] *){padding-left:0}.md\:grid-cols-3{grid-template-columns:repeat(5,minmax(0,1fr))}.lazy__bg{background-size:contain;background-repeat:no-repeat}.banner-entry,.two-row .banner-entry:first-child{height:400px!important;background-color:transparent;padding:0;color:var(--second-color);overflow:hidden;position:relative;transition:.5s}.itemRight,.text-slide{height:50px;position:absolute}.one-row .banner-entry,.one-row .banner-entry:first-child,.two-row .banner-entry,.two-row .banner-entry:first-child{grid-column:span 1;grid-row:span 1}.sm\:gap-8{gap:0}.sm\:py-16{padding-top:0;padding-bottom:4rem}.s-block-tabs{background-color:var(--second-color);padding-bottom:1rem}.s-block--tabs-produtcs .tab-trigger.is-active button,.s-block--tabs-produtcs button:hover{color:#fff}.tabs.hide-scroll{align-items:center}section#featured-products-style2-1{background:0 0}.s-product-card-content-footer{width:100%}.s-product-card-price{color:#8d744e}.s-slider-block__title h2{font-family:"Ara Etab Almonie",sans-serif;font-size:40px;font-weight:300;line-height:30px;color:#565656}.s-comments-product{background-color:rgb(243 244 246 / 0%)}.s-button-element:not(.tab-trigger.s-button-element):not(:disabled):not(
+[loading]
+),.s-button-primary{border-color:#b1c8a0;background-color:#b1c8a0;color:#33322e;border-radius:4px}.custom-button:hover,.custom-button:hover::before{color:var(--second-color)}.s-product-card-entry{box-shadow:0 0 7px 0 rgb(13 53 53 / 21%)}.s-product-card-fit-height .s-product-card-image{height:20rem;max-height:20rem}footer.store-footer{background-image:url(https://land.themiify.com/wp-content/uploads/2024/10/Untitled-design-3.png);padding-top:195px;padding-bottom:81px;background-repeat:no-repeat;background-size:cover;background-position:center;background-color:#00000069!important;background-blend-mode:overlay}.store-footer__inner{backdrop-filter:blur(11.9px);background:#f5f5f58c!important;border:none!important;width:60%;margin:auto;border-radius:32px;color:#000}footer p.max-w-sm.leading-6.mb-6{margin:1rem auto;text-align:center;font-size:18px;font-weight:500}.s-contacts-item{font-size:.9rem}.s-menu-footer-item{font-size:1.125rem;font-weight:500}.s-contacts-icon,.s-social-link a{border-color:#000}.store-footer h3{font-size:1.25rem}.text-slide{width:121vw;margin-inline:auto;overflow:hidden;color:#33322e;background-color:#b1c8a0;left:50%;transform:translateX(-50%)}@keyframes scrollRight{from{right:100%}to{right:-100%}}.itemRight{width:100%;border-radius:6px;animation-timing-function:linear;animation-duration:30s;animation-iteration-count:infinite;align-items:center;font-size:20px;gap:10px;animation-name:scrollRight;margin-left:25%;text-align:right}.item1{animation-delay:calc(30s / 10 * 0)}.item2{animation-delay:calc(30s / 10 * -1)}.item3{animation-delay:calc(30s / 10 * -2)}.item4{animation-delay:calc(30s / 10 * -3)}.item5{animation-delay:calc(30s / 10 * -4)}.item6{animation-delay:calc(30s / 10 * -5)}.item7{animation-delay:calc(30s / 10 * -6)}.item8{animation-delay:calc(30s / 10 * -7)}.item9{animation-delay:calc(30s / 10 * -8)}.item10{animation-delay:calc(30s / 10 * -9)}.marque{min-height:50px}.small-circle{background:#33322e;width:11px;height:11px;border-radius:50%}.hidden.lg\:block:has(.s-social-list ){display:block}@media (min-width:1024px){footer div:has(salla-social){margin-top:3rem}.store-footer div:nth-of-type(2):has(h3),.store-footer div:nth-of-type(4):has(h3){transform:translateY(-2rem)}.banner-entry:nth-of-type(2n){transform:translateY(85px)}footer .container.grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}footer .lg\:col-span-2{grid-column:span 3/span 3}.store-footer a.flex.items-center.m-0{justify-content:center}.store-footer div:has(h3){margin:auto;text-align:center}.store-footer h3{margin-bottom:.75rem;font-weight:400}footer .rtl\:lg\:pl-20:where([dir=rtl],[dir=rtl] *){padding-left:0}footer .s-social-list{justify-content:center;margin-top:1rem}footer p.max-w-sm.leading-6.mb-6{max-width:58%}.banner-entry>div{background-repeat:no-repeat;display:inline-block;transition:.3s}.banner-entry>div:after{content:"";position:absolute;top:-50%;left:-60%;width:20%;height:200%;opacity:0;transform:rotate(30deg);background:rgba(255,255,255,.13);background:linear-gradient(to right,rgba(255,255,255,.13) 0,rgba(255,255,255,.13) 77%,rgba(255,255,255,.5) 92%,rgba(255,255,255,0) 100%)}.banner-entry>div:hover:after{opacity:1;left:130%;transition-property:left,top,opacity;transition-duration:.7s,.7s,.15s;transition-timing-function:ease}.banner-entry>div:active:after{opacity:0}}.banner-entry>div:hover{transform:scale(.9)}.s-product-card-image img{transform:rotate(0) scale(1);transition:.3s ease-in-out}.s-product-card-image:hover img{-webkit-transform:rotate(0) scale(1);transform:rotate(5deg) scale(1.2)}a.custom-button-link{width:100%;display:flex;margin-top:3rem;justify-content:center}.custom-button{display:inline-flex;align-items:center;justify-content:center;padding:10px 35px;border-radius:30px;border:1px solid var(--color-primary);background-color:var(--second-color);font-size:21px;color:var(--color-primary);cursor:pointer;transition:.3s;flex-direction:row-reverse}.custom-button:hover{background-color:var(--color-primary)}.custom-button::before{content:"\2190";display:inline-block;margin-right:8px;font-size:20px;color:var(--color-primary)}@media (max-width:767px){.s-block__title h2{font-size:30px;line-height:30px}.s-block--banners{margin-bottom:1rem}.s-product-card-fit-height .s-product-card-image{height:17rem}.s-slider-block__title h2{font-size:30px}.s-block:first-of-type{margin-top:-1rem}.s-slider-block__title-right:where([dir=rtl],[dir=rtl] *){padding-left:1rem}.tabs.hide-scroll .s-button-btn{padding-left:.5rem;padding-right:.5rem}.md\:grid-cols-3{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:gap-8{gap:1rem}footer *{text-align:center}.s-contacts-list{width:67%;margin:auto;gap:.7rem}.s-social-list{justify-content:center}footer.store-footer{padding-top:60px;padding-bottom:60px;background-color:#000000a1!important}.store-footer__inner{width:76%}section#featured-products-style2-1{padding-bottom:0}.custom-button,.custom-button::before,footer p.max-w-sm.leading-6.mb-6{font-size:16px}.s-contacts-list.s-contacts-list-vertical{flex-direction:row;justify-content:center}div#contact-slot{width:fit-content}.s-contacts-icon:where([dir=rtl],[dir=rtl] *){margin-left:0}footer .unicode{display:none!important}.store-footer .contact-social{margin-top:0;padding-top:.9rem}.itemRight:nth-child(n+4),.store-footer .lg\:hidden.contact-social{display:none}.text-slide{width:200vw;left:0}.itemRight{animation-duration:10s}a.custom-button-link{margin-top:1.5rem}salla-social.s-social-list {margin-bottom: 0;
+}/*.itemRight.item3 {margin-right: 100px;}*/}.copyright-text p {display:none}footer div:has(.copyright-text){justify-content: center;}
+
+
+
+ /* Animation keyframes for zoom-in effect */
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Styles for overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for popup container */
+.content-bg {
+    background-color: #77bb0b;
+        animation: zoomIn 1s ease forwards;
+        max-width:450px
+}
+
+.popup-container {
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+.popup-content h2 {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 44px;
+    padding: 20px;
+    font-family: "Ara Etab Almonie",sans-serif;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+/* Styles for popup header */
+.popup-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Styles for close button */
+#closeButton {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #6b7280;
+    position: absolute;
+    top: 7px;
+    left: 11px;
+}
+.popup-content a {
+    text-decoration: underline;
+}
+.popup-content p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+@media(max-width:767px){
+.content-bg {
+    background-color: #77bb0b;
+        animation: zoomIn 1s ease forwards;
+        max-width:300px
+}
+.popup-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    padding:10px;
+}
+.popup-container {
+    padding: 30px 0;
+}
+.popup-content p {
+    padding-bottom: 20px;
+    font-size:14px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded",function(){var n=document.querySelector("footer a.flex.items-center.m-0");if(n){var e=document.createElement("a");(e.href="https://zylaglam.com/"),(e.innerHTML='<img src="https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/vXxyEy/ZYy9lOXv6SP0HM7K5O4Tdj8FvrbtClDqUkWtBDG8.png" alt="zylaglam" style="width: 100px; display: block; margin: auto;" />'),n.replaceWith(e)}
+const s=document.querySelector(".store-footer__inner .container.grid");if(s){const n='\n          <div>\n            <h3>معلومات</h3>\n            <div class="s-menu-footer-list">\n              <a href="https://zylaglam.com/about-us/page-455121477" target="_self" class="s-menu-footer-item">عن زيلا</a>\n              <a href="https://zylaglam.com/الأسئلة-الشائعة/page-597225288" target="_self" class="s-menu-footer-item">الأسئلة الشائعة</a>\n            </div>\n          </div>\n        ';s.insertAdjacentHTML("beforeend",n)}
+if(!document.querySelector(".mtsnb-container-outer")){var a=document.createElement("div");(a.className="marque"),(a.innerHTML='\n            <div class="text-slide">\n  <div class="itemRight item1">\n    <span class="small-circle"></span>\n    <span>توصيل مجاني على جميع الطلبات 🎉</span>\n  </div>\n  <div class="itemRight item2">\n   <span class="small-circle"></span>\n    <span>خصم 10% علي أول طلب عند استخدامك كود خصم { zyla } 🔔</span>\n    </div>\n  <div class="itemRight item3">\n    <span class="small-circle"></span>\n    <span>توصيل مجاني على جميع الطلبات 🎉</span>\n  </div>\n  <div class="itemRight item4">\n   <span class="small-circle"></span>\n    <span>خصم 10% علي أول طلب عند استخدامك كود خصم { zyla } 🔔</span> \n    </div>\n  <div class="itemRight item5">\n    <span class="small-circle"></span>\n    <span>توصيل مجاني على جميع الطلبات 🎉</span>\n  </div>\n  <div class="itemRight item6">\n   <span class="small-circle"></span>\n    <span>خصم 10% علي أول طلب عند استخدامك كود خصم { zyla } 🔔</span>\n    </div>\n  <div class="itemRight item7">\n    <span class="small-circle"></span>\n    <span>توصيل مجاني على جميع الطلبات 🎉</span>\n  </div>\n  <div class="itemRight item8">\n   <span class="small-circle"></span>\n    <span>خصم 10% علي أول طلب عند استخدامك كود خصم { zyla } 🔔</span>    \n    </div>\n    <div class="itemRight item9">\n   <span class="small-circle"></span>\n   <span>توصيل مجاني على جميع الطلبات 🎉</span>\n    \n    </div>\n    <div class="itemRight item10">\n   <span class="small-circle"></span>\n    <span>خصم 10% علي أول طلب عند استخدامك كود خصم { zyla } 🔔</span>   \n    </div>\n</div>\n        '),document.body.insertBefore(a,document.body.firstChild)}}),document.addEventListener("DOMContentLoaded",function(){var n=document.createElement("a");(n.href="https://zylaglam.com/%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA/c1649554743"),n.classList.add("custom-button-link");var e=document.createElement("button");e.classList.add("custom-button"),(e.innerHTML="<span>مشاهدة المزيد</span>"),n.appendChild(e);var s=document.querySelector(".s-block-tabs .container ");s&&s.appendChild(n.cloneNode(!0));var a=document.querySelector(".s-block--best-offers ");a&&a.appendChild(n.cloneNode(!0))})
+
+
+
+
+
+
+
+
+const overlay = `
+  <div class="overlay">
+    <div class="content-bg">
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-header">
+        <button id="closeButton">&times;</button>
+      </div>
+      <div class="popup-content">
+        <img src="https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/vXxyEy/ZYy9lOXv6SP0HM7K5O4Tdj8FvrbtClDqUkWtBDG8.png" alt="zylaglam" style="width: 100px; display: block; margin: auto;" />
+        <h2>استخدمي كود خصم {zyla } و احصلي على خصم 15%</h2>
+        <p>+ توصيل مجاني علي جميع الطلبات</p>
+        <a href="https://zylaglam.com/%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA/c1649554743">تسوقي الان مع خصم 15%</a>
+      </div>
+    </div>
+    </div>
+  </div>
+`;
+
+// Check sessionStorage to see if the popup has already been shown
+if (!sessionStorage.getItem("popupShown")) {
+  // Insert the overlay HTML into the page
+  document.body.insertAdjacentHTML("afterbegin", overlay);
+
+  // Add event listener to close button
+  document.getElementById("closeButton").addEventListener("click", hidePopup);
+
+  // Mark the popup as shown in sessionStorage
+  sessionStorage.setItem("popupShown", "true");
+}
+
+// Function to hide the popup and overlay
+function hidePopup() {
+  const container = document.getElementById("popupContainer");
+  const overlay = document.querySelector(".overlay");
+  if (container && overlay) {
+    container.style.display = "none";
+    overlay.style.display = "none";
+  }
+}

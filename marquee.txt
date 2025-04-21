@@ -1,0 +1,75 @@
+/*css*/
+/* تحديد خصائص الشريط المتحرك */
+.text-slide {
+    width: 200vw; /* تحديد العرض ليغطي الشاشة */
+    overflow: hidden; /* منع المحتوى الزائد من الظهور */
+    background-color: #bc903f; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    white-space: nowrap; /* منع النص من الالتفاف */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* تغليف العناصر داخل النص */
+.text-wrapper {
+    display: flex;
+    gap: 50px; /* المسافة بين العناصر */
+    animation: scrollRight 80s linear infinite;
+}
+
+/* تعريف الحركة من اليمين إلى اليسار */
+@keyframes scrollRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* تنسيق العناصر الفردية داخل الشريط المتحرك */
+.itemRight {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    gap: 10px;
+}
+
+/* تنسيق الدائرة الصغيرة */
+.small-circle {
+    background: #fff;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+
+
+
+
+/*js*/
+if (!document.querySelector(".mtsnb-container-outer")) {
+    var marqueeContainer = document.createElement("div");
+    marqueeContainer.className = "marque";
+
+    marqueeContainer.innerHTML = `
+        <div class="text-slide">
+            <div class="text-wrapper">
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+                <div class="itemRight"><span class="small-circle"></span> شحن مجاني عند شرائك بأكثر من 250 ريال </div>
+            </div>
+        </div>
+    `;
+
+    document.body.insertBefore(marqueeContainer, document.body.firstChild);
+}

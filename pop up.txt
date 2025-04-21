@@ -1,0 +1,36 @@
+/* text pop up */
+/* Add custom Js code below */ 
+// Overlay HTML with popup content appended
+const overlay = `
+  <div class="overlay">
+    <div class="popup-container" id="popupContainer">
+      <div class="popup-header">
+        <button id="closeButton">&times;</button>
+      </div>
+      <div class="popup-content">
+        <p style="font-size: 18px; font-weight: bold; text-align: center; color: #333;">
+          خصم 29 ريال عند استخدم كود خصم <span style="color: red;">MA</span>
+        </p>
+      </div>
+    </div>
+  </div>
+`;
+
+// Insert the overlay HTML into the page
+document.body.insertAdjacentHTML("afterbegin", overlay);
+
+// Function to hide the popup and overlay
+function hidePopup() {
+  const container = document.getElementById('popupContainer');
+  const overlay = document.querySelector('.overlay');
+  if (container && overlay) {
+    container.style.display = "none";
+    overlay.style.display = "none";
+  }
+}
+
+// Add event listener to close button
+const closeBtn = document.getElementById('closeButton');
+if (closeBtn) {
+  closeBtn.addEventListener('click', hidePopup);
+}

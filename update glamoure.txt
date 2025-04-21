@@ -1,0 +1,128 @@
+/* Add custom CSS styles below */ 
+
+.top-navbar {
+    display: none;
+}
+/*cats*/
+.g_cat .mb-\[55px\] {
+  margin: 2rem auto !important;
+}
+.g_cat .grid-cols-3 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+.g_cat {
+  margin-bottom: 1rem;
+}
+.banner_ad  .text {
+    width: 100% !important;
+}
+/* offers */
+.product_deadline {
+  box-shadow: none;
+}
+
+.product_deadline {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.dead_line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product_deadline salla-add-product-button div {
+  height: 100%;
+}
+
+.product_deadline .data .s-button-primary {
+  color: #fff;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+.s-block--photos-slider:not(:first-of-type) {
+  margin: 2rem 0;
+}
+
+* offers */
+.product_deadline {
+  box-shadow: none;
+}
+
+.product_deadline {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.dead_line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+.s-block--photos-slider:not(:first-of-type) {
+  margin: 2rem 0;
+}
+.image-title .title-heade {
+    background-color: #ffffff00;
+    padding: 0px 30px 21px;
+    color: #fff;
+}
+.ads .imgs {
+    gap: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+}
+.ads .img img {
+    object-fit: contain;
+}
+.ads .img {
+    max-height: 410px;
+}
+.copyright-text p,
+.copyright-text p a:hover {
+  color: white!important;
+}
+.s-payments-list-item {
+    background-color: white;
+}
+/*media*/
+@media (min-width: 768px) {
+section:nth-child(1 of.landing-page-first-bannar) .landing-banner {
+        height: 92vh;
+    }
+    .g_cat .swiper-wrapper{
+justify-content: center;
+}
+    }
+@media (max-width: 768px) {
+
+    section:nth-child(1 of.landing-page-first-bannar) .container .w-full {
+  background: #FFFFFFB0;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+    .g_cat h3 {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+  .s-products-slider-card {
+    max-width: 215px !important;
+  }
+  .banner_ad .item-text {
+    font-size: clamp(15px, 17px + 1vw, 42px);
+    line-height: 2;
+    max-width: 100%;
+}
+
+}

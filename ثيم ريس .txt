@@ -1,0 +1,13 @@
+/*ثيم ريس */
+
+document.addEventListener("DOMContentLoaded", function() {
+    // التأكد من أن العنصر الذي يحتوي على الكلاس product-single موجود
+    if (document.body.classList.contains('product-single')) {
+        // العثور على العنصر الذي يحتوي على الكلاس is-open
+        const openElement = document.querySelector('.container form .container_accordion >span');
+        if (openElement) {
+            // تنفيذ النقر على العنصر
+            openElement.click();
+        }
+    }
+});

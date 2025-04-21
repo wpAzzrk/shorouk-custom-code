@@ -1,0 +1,213 @@
+/*خطوةةة */
+/* Add custom CSS styles below */ 
+:root{
+    --main-color:#7B41BC;
+    --second-color:#fff;
+    --third-color:#000;
+}
+.main-nav-container .inner .mobile-menu ul li span {
+    color: var(--third-color);
+}
+#sliider_theme .a_div #circle .img2 ,#sliider_theme .a_div #circle .img1 {
+    z-index: 2;
+}
+#sliider_theme .a_div #circle .fill_text {
+display:none;
+}
+div#mainnav.top-10 {
+    top: UNSET !important ;
+}
+.s-cart-summary-count {
+    background-color: transparent;
+}
+#sliider_theme.toggleColor1 {
+    background-image: url(https://i.ibb.co/y4d4TQV/Mask-group-2.png)!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+}
+#sliider_theme [data-sal|=slide].sal-animate {
+    z-index: 2;
+}
+/*banner--fixed*/
+.banner--fixed img {
+       background-color: transparent;
+       margin: auto;
+}
+ .s-block--fixed-banner .container {
+    max-width: 90%;
+}
+.s-block--fixed-banner .container img:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+/*  grid*/
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.lazy__bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.banner-entry ,.two-row .banner-entry:first-child {
+     height: 500px !important;
+      background-color: transparent;
+      padding: 0px;
+      color: #fff;
+ overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+   }
+.one-row .banner-entry,
+.two-row .banner-entry,
+.one-row .banner-entry:first-child,
+.two-row .banner-entry:first-child {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.sm\:gap-8 {
+    gap: 0;
+}
+.sm\:py-16 {
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+/* animation on hover */
+a.banner-entry.square-photos:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.banner-entry::after {
+  content: '';
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.banner-entry:hover::after {
+  animation: flashing 0.6s linear;
+}
+
+@keyframes flashing {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+.bg-black {
+    background-color: transparent;
+    background-color: transparent;
+}
+section:nth-of-type(5) .md\:w-1\/2 {
+    width: 67%;
+}
+
+/*products*/
+.s-button-primary ,#btn_card_pro .s-button-primary-outline:hover ,.s-button-primary-outline{
+    background-color: var(--main-color) !important;
+}
+#product-offers .one-product-card .containt .last_buttons .s-button-btn {
+    border-radius: 18px;
+}
+/* start offer section */
+
+section#product-offers a.image-parent ,.s-product-card-image a {
+    overflow: hidden;
+}
+section#product-offers a.image-parent:hover img , .s-product-card-image a:hover img {
+    transform: scale(1.1) !important;
+}
+section#product-offers a.image-parent img , .s-product-card-image a:hover img {
+    transform: rotate(0);
+    transition: all .3s;
+}
+section#product-offers .block_title {
+    color: var(--main-color);
+}
+/*big bannarr*/
+section:nth-of-type(4) .container div.md\:w-1\/2 ,section:nth-of-type(6) .container div.md\:w-1\/2 {
+    width: 100%;
+    text-align: center;
+} 
+section:nth-of-type(4) .container div p ,section:nth-of-type(6) .container div p{
+    width: 100%;
+    line-height: 2.25rem; 
+ }
+ section:nth-of-type(4) .container div a.btnCus , section:nth-of-type(6) .container div a.btnCus {
+    background-color:var(--main-color) !important;
+    color: var(--second-color);
+} 
+/*bannar by side image*/
+#side-image-banner .containt_position {
+    text-align: center;
+}
+#side-image-banner .md\:flex-row {
+    flex-direction: row-reverse;
+}
+#side-image-banner .container {
+    max-width: 100%;
+    padding:0px;
+}
+#side-image-banner .image-parent img {
+    margin-top: 0;
+    transform: unset;
+    transition: unset;
+}
+#side-image-banner .image-parent {
+    justify-content: flex-start;
+}
+#side-image-banner p {
+    display: none;
+}
+#side-image-banner .container div a.btnCus {
+    background-color:var(--second-color) !important;
+    color: var(--third-color);
+}
+#side-image-banner .container >div {
+    background: rgb(107,55,166);
+    background: linear-gradient(0deg, rgba(107,55,166,1) 0%, rgba(46,27,84,1) 100%);
+}
+.footer-is-light .store-footer .store-footer__inner {
+    background-color: #210a4e !important;
+    color: #fff;
+}
+@media(max-width:600px){
+section:not(:first-of-type){
+margin:1rem auto !important;
+}
+.grid.one-row.md\:grid-cols-2.grid-flow-row.gap-3.sm\:gap-8 {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.banner-entry ,.two-row .banner-entry:first-child{
+    height: 200px !important;
+}
+.s-products-slider-card {
+    width: 55%;
+  }
+#side-image-banner .md\:flex-row {
+    flex-direction: column-reverse;
+}
+#side-image-banner .containt_position {
+    margin-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+ section:nth-of-type(4) .bg-image-container , section:nth-of-type(6) .bg-image-container{
+background-size: cover !important;
+}
+#side-image-banner .image-parent img {
+    margin-top: 0px!important;
+    transform: rotate(0deg) scale(1.5)!important;
+}
+}

@@ -1,0 +1,327 @@
+/*جلامور*/
+//js
+// Create a media condition that targets viewports at least 768px wide
+const mediaQuery = window.matchMedia('(max-width: 767px)')
+if (mediaQuery.matches) {
+const selTOpNav = document.querySelector('.top-navbar .flex');
+const selSearch = document.querySelector('.header-search');
+console.log(selSearch);
+selTOpNav.appendChild(selSearch);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    var linkElement = document.querySelector('.copyright-text p a');
+    linkElement.innerHTML = '<a href="https://shark-company.com">شارك</a>';
+});
+/*css*/
+/* Add custom CSS styles below */ 
+/* global */
+.md\:mb-\[112px\] {
+  margin-bottom: 25px;
+}
+.main-nav-container.fixed-pinned .inner {
+    background-color: #0000004a;
+}
+body:not(body.index)  .main-nav-container {
+    background-color: #00000054;
+}
+/* top slider */
+i.sicon-lightning {
+  color: #fff;
+}
+.top-navbar {
+  display: none;
+}
+header.store-header {
+  gap: 0;
+}
+
+.navbar-brand img {
+  max-height: 5rem;
+  width: 100%;
+  max-width: 100px;
+}
+.main-menu li > a {
+  font-size: 1rem;
+}
+.main-nav-container.fixed-pinned .navbar-brand img {
+  max-height: 65px;
+}
+/* main banner */
+.landing-page-fixed-bannar-0 {
+  background-size: cover;
+}
+.landing-page-fixed-bannar-6 h1,
+.landing-page-fixed-bannar-0 h1 {
+  margin-top: 7rem;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.landing-page-fixed-bannar-6 p,
+.landing-page-fixed-bannar-0 p {
+  font-size: 24px;
+  line-height: 32px;
+  max-width:650px;
+  margin:1rem auto 0;
+}
+
+.landing-page-fixed-bannar-6 .w-\[100\%\],
+.landing-page-fixed-bannar-0 .w-\[100\%\] {
+  width: 80%;
+  margin-right: 5%;
+}
+
+
+
+/* categories */
+.g_cat .mb-\[55px\] {
+  margin: 2rem auto !important;
+}
+.g_cat .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+.g_cat {
+  margin-bottom: 1rem;
+}
+
+.ads p {
+  color: black;
+}
+
+@media(min-width:768px){
+.g_cat .swiper-wrapper{
+justify-content: center;
+}
+}
+
+/* offers */
+.product_deadline {
+  box-shadow: none;
+}
+
+.product_deadline {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.dead_line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product_deadline salla-add-product-button div {
+  height: 100%;
+}
+
+.product_deadline .data .s-button-primary {
+  color: #fff;
+}
+
+.ad-star-btn{
+    background-color: var(--color-primary) !important;
+}
+
+.s-block--best-offers {
+  margin: 2rem auto;
+}
+
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+.s-block--photos-slider:not(:first-of-type) {
+  margin: 2rem 0;
+}
+
+.slider-bannars {
+  padding: 0;
+  margin: 2rem auto;
+}
+
+.slider-bannars h2 {
+  color: var(--color-primary);
+}
+
+.slider-bannars button {
+  border:1px solid var(--color-primary);
+  background-color:white !important;
+}
+
+.landing-page-fixed-bannar-5 {
+  max-height: 555px;
+}
+
+.g_features {
+  margin: 2rem 0 !important;
+}
+
+.section_c_r {
+  gap: 0;
+}
+
+.section_c_r .justify-center {
+    gap: 5rem;
+}
+
+.section_c_r {
+  margin: 2rem auto;
+}
+
+.outof-stock {
+  color: white;
+}
+
+.banner_ad  .bg-cover {
+    background-position: center;
+    background-size: cover;
+}
+footer .s-apps-icons h3,
+footer p.text-sm.text-\[\#636363\],
+footer h2.mb-4.text-sm.font-medium,
+footer h2.text-xl.font-semibold {
+  color: #fff;
+}
+
+footer input#mc-embedded-subscribe {
+  color: var(--color-primary);
+  background-color: #fff;
+}
+
+.copyright-text p,
+.copyright-text p a:hover {
+  color: white!important;
+}
+
+.store-footer a:hover {
+  color: #ae445a;
+}
+
+footer .relative.bg-\[var\(--s-color\)\].py-8 {
+  padding-bottom: 0;
+}
+
+footer
+  .m-auto.flex.justify-start.max-w-\[1300px\].items-center.flex-wrap.max-lg\:justify-start.gap-9.md\:gap-6.px-5 {
+  padding: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.s-payments-list-item {
+    background-color: white;
+}
+
+footer img.max-w-24.mb-2 {
+    filter: brightness(0);
+}
+
+@media (min-width: 992px) {
+  .rtl\:lg\:pl-20:where([dir="rtl"], [dir="rtl"] *) {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .s-block--best-offers {
+    margin: 1rem auto;
+  }
+
+.landing-page-fixed-bannar-0 {
+    background-size: cover;
+    background-color: rgba(0,0,0,0.25);
+    background-blend-mode: overlay;
+}
+
+  .landing-page-fixed-bannar-6,
+  .landing-page-fixed-bannar-0 {
+    max-height: 425px;
+  }
+
+.landing-page-fixed-bannar-0 .container ,
+.landing-page-fixed-bannar-6 .container {
+width:fit-content;
+margin-left:auto
+}
+
+
+.gap-8 {
+    gap: 0.5rem;
+}
+
+  .landing-page-fixed-bannar-6 .w-\[100\%\],
+  .landing-page-fixed-bannar-0 .w-\[100\%\] {
+    width: 100%;
+    margin-right: auto;
+    text-align: center !important;
+  }
+
+  .landing-page-fixed-bannar-6 h1,
+  .landing-page-fixed-bannar-0 h1 {
+    width: 100%;
+    margin-top: 7rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    padding:0.5rem
+  }
+
+  .landing-page-fixed-bannar-6 h1 {
+    margin-top: 5rem;
+    border-radius: 0.5rem;
+
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ads .img .over .text {
+    text-align: center;
+    justify-content: center;
+    align-items: center !important;
+  }
+
+  .g_cat h3 {
+    font-size: 1rem;
+  }
+  .s-products-slider-card {
+    max-width: 215px !important;
+  }
+
+  #slider_bannars_5.slider-bannars .slider-bannars-moving {
+    height: 300px;
+  }
+
+  .slider-bannars h2 {
+    font-size: 1.25rem;
+  }
+
+  .mb-\[56px\] {
+    margin-bottom: 25px;
+  }
+
+  .footer-is-light .store-footer {
+    padding: 0;
+  }
+
+  .mb-\[120px\] {
+    margin-bottom: 70px;
+  }
+  
+  salla-user-menu.hydrated {
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+  footer .flex.justify-center.gap-6 {
+    flex-direction: column;
+}
+.banner_ad .item-text {
+    font-size: clamp(15px, 17px + 1vw, 42px);
+    line-height: 2;
+    max-width: 100%;
+}
+}

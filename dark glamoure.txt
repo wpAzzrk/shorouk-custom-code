@@ -1,0 +1,98 @@
+/* dark glamoure */ 
+.top-navbar {
+    display: none;
+}
+.g_cat .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.g_cat .products-item {
+    width: 20%;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+section:nth-child(1 of.landing-page-first-bannar) .landing-banner {
+        height: 92vh;
+    }
+}
+@media (max-width: 768px) {
+.g_cat h3 {
+    line-height: 17px;
+    font-size: 12px !important;
+}
+.landing-page-first-bannar .container .w-full {
+  background: #FFFFFFB0;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+section:nth-child(1 of.landing-page-first-bannar) .container .w-full {
+    padding: 1rem 1rem;
+    align-items: center !important;
+    margin-bottom: 1rem;
+}
+.landing-page-first-bannar .txt .custom-dlay-heading {
+    font-size: 17px;
+}
+section:nth-child(1 of.landing-page-first-bannar) .txt {
+    justify-content: end;
+    
+}
+.banner_ad .text {
+    width: 100% !important;
+}
+.banner_ad .item-text {
+    font-size: clamp(16px, 12px + 1vw, 42px);
+    color: rgba(31, 41, 55, 1) !important;
+}
+.over {
+    align-items: end !important;
+    background-color: #ffffff4f;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 200px;
+}
+.s-product-card-vertical {
+    height: 400px !important;
+}
+
+}
+.copyright-text p,
+.copyright-text p a:hover {
+  color: white!important;
+}
+
+
+/*dark*/
+.index .app-inner {
+    background-color: #612b5e !important;
+}
+.product_deadline {
+    background-color: #ffffffad;
+    border-radius: 15px;
+}
+section.weeklyOffers {
+    background: #612B5E;
+    background: linear-gradient(180deg, rgba(97, 43, 94, 1) 0%, rgba(255, 255, 255, .5) 100%);
+}
+.g_features .products-item i {
+    transition: ease all 0.5s;
+    color: rgba(255, 255, 255, 1);
+}
+.g_features .products-item h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    --tw-text-opacity: 1;
+    color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}

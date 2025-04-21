@@ -1,0 +1,335 @@
+/*fixed code*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    var linkElement = document.querySelector('.copyright-text p a');
+    linkElement.innerHTML = '<a href="https://shark-company.com">شارك</a>';
+});
+
+
+/*fixed code*/
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+:root{
+    --second-color:#fff;
+}
+/*change body color */
+.index:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff url(https://res.cloudinary.com/dlhrau5nd/image/upload/v1725712267/image_2843_1_cvossf.png);
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999999 !important;
+    background-size: 250px !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    animation-name: logobg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@keyframes logobg {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+}
+body  ,.s-comments-product {
+    background-color:  var(--second-color) !important ;
+
+}
+/* image header*/
+[dir=rtl] salla-slider.photos-slider .swiper{
+    padding: 0 !important;
+}
+.s-block salla-slider.photos-slider .swiper-slide {
+    margin: 0;
+    width: 100%;
+}
+ .carousel-slider .swiper-wrapper>div:first-of-type {
+    padding: 0;
+}
+.s-block:first-of-type {
+    margin-top: 0;
+}
+button.s-slider-prev.s-slider-nav-arrow.swiper-button-disabled.swiper-button-lock ,button.s-slider-next.s-slider-nav-arrow.swiper-button-disabled.swiper-button-lock{
+    display: none;
+}
+
+/*banner--fixed*/
+.banner--fixed img {
+       background-color: transparent;
+       margin: auto;
+}
+/*  grid*/
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(4,minmax(0,1fr));
+}
+.lazy__bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.banner-entry ,.two-row .banner-entry:first-child {
+     height: 300px !important;
+      background-color: transparent;
+      padding: 0px;
+      color: #fff;
+ overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+   }
+.one-row .banner-entry,
+.two-row .banner-entry,
+.one-row .banner-entry:first-child,
+.two-row .banner-entry:first-child {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.sm\:gap-8 {
+    gap: 0;
+}
+.sm\:py-16 {
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+/* animation on hover */
+a.banner-entry.square-photos:hover {
+    transform: scale(1.1);
+    transition: 1s ease;
+}
+.banner-entry::after ,.s-product-card-image::after  {
+  content: '';
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.banner-entry:hover::after ,.s-product-card-image:hover::after{
+  animation: flashing 0.6s linear;
+}
+
+@keyframes flashing {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+/* products border  */
+.s-product-card-entry {
+    border: 2px solid var(--color-primary);
+    
+}
+button.s-button-btn.s-button-outline.s-button-primary-outline {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #ddd;
+}
+button.s-button-btn.s-button-outline.s-button-primary-outline {
+      background-color: var(--color-primary);
+    color: var(--second-color);
+}
+
+.s-product-card-content {
+    padding: 12px;
+}
+.s-product-card-image img {
+    background: #fff;
+}
+/*remove the latest products*/
+[dir=rtl] .s-slider-block__title h2 {
+      color:var(--color-primary);
+}
+/*footer*/
+.footer-is-light .store-footer .store-footer__inner  ,footer.store-footer {
+    background-color: var(--color-primary) !important;
+    color: var(--second-color);
+}
+.copyright-text p {
+    color: var(--second-color);
+}
+/******** footer icons ********/
+
+ .s-social-link a{
+    color: var(--white-color);
+    border: 0;
+    transition: all .5s;
+}
+.s-social-link a:hover {
+    transform: translateY(-10px);
+     transition: all .5s;
+}
+
+a[href*="instagram"]{
+
+    background: -o-linear-gradient(45deg, #f09433 0, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);background: linear-gradient(45deg, #f09433 0, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    
+    }
+a[href*="tiktok"]  {
+    background: -o-linear-gradient(330deg, #69c9d0, #000, #ee1d52);background: linear-gradient(120deg, #69c9d0, #000, #ee1d52);}
+    a[href*="facebook"] {background: -o-linear-gradient(45deg, #3776f2, #00b1f7);background: linear-gradient(45deg, #3776f2, #00b1f7);}
+    
+a[href*="youtube"] {
+       background-color: #c4302b;
+    }
+    
+a[href*=snapchat] {
+    background: #fffc00;
+    color: black;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.s-contacts-icon {
+    border: 0;
+    text-align: center;
+}
+
+.s-contacts-icon {
+    color: var(--color-primary);
+    display: inline-grid;
+    justify-items: center;
+    margin-right: 10px;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px
+    
+}
+
+.s-contacts-icon {
+    position: relative;
+    z-index: 1;
+    background: repeating-conic-gradient(from var(--a),#fff 0%,#fff 5%,transparent 5%,transparent 40%,#fff 50% );
+    animation: animate 4s linear infinite;
+    border-radius: 12px
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg
+    }
+
+    100% {
+        --a: 360deg
+    }
+}
+
+.s-contacts-icon::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    z-index: -1;
+    background:var(--second-color);;
+    border-radius: 12px
+}
+.store-footer h3 {
+    background-color: white;
+    color: var(--color-primary);
+    border-radius: 15px;
+    padding: 6px 20px;
+    text-align: center !important;
+}
+/* media */
+@media(min-width:1024px){
+.navbar-brand img {
+    max-height: 6rem !important;
+
+}
+.index div#mainnav {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    padding-top: 1.5rem;
+}
+.index #mainnav:not(#mainnav.fixed-pinned.fixed-header){
+ background-color: transparent;
+    box-shadow: none; 
+    }
+.index #mainnav:not(#mainnav.fixed-pinned.fixed-header) * {
+    color: #fff;
+    stroke:#fff
+}
+.index #mainnav:not(#mainnav.fixed-pinned.fixed-header) .sub-menu {
+    background-color: var(--color-primary);
+}}
+@media (max-width: 767px){
+.sm\:gap-8 {
+    gap: .5rem;
+}
+.banner-entry ,.two-row .banner-entry:first-child {
+    height:100px !important;
+  } 
+/*slides*/
+.swiper-slide {
+    width: 56%;
+}
+.store-footer__inner * {
+    text-align: center;
+    justify-content: center;
+}
+}
+
+
+
+
+/*map*/
+// Select the container within the footer
+const footerContainer = document.querySelector('footer .container');
+console.log(footerContainer);
+
+// Define the HTML content for the map
+const mapHTML = `
+  <div class="addMap">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.039052871696!2d39.7967408!3d21.3883669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c21b0038725559%3A0x17f6a87dced333f9!2z2KfZhNio2K3YsdmK2YYg2KfZhNmF2LnYs9mE2KfYqg!5e0!3m2!1sar!2seg!4v1722151441275!5m2!1sar!2seg"
+      width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+`;
+
+// Insert the map HTML into the footer container
+footerContainer.insertAdjacentHTML('beforeend', mapHTML);
+
+
+
+
+
+  section:nth-child(1 of .landing-page-first-bannar)
+
+

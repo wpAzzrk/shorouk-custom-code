@@ -1,0 +1,85 @@
+/*قصص*/
+/* Add custom CSS styles below */ 
+.app-inner, .top-navbar, #mainnav {
+    background: #111148 !important;
+}
+/* image header*/
+[dir=rtl] salla-slider.photos-slider .swiper{
+    padding: 0 !important;
+}
+.s-block:first-of-type salla-slider.photos-slider .swiper-slide {
+    margin: 0;
+    width: 100%;
+}
+ .carousel-slider .swiper-wrapper>div:first-of-type {
+    padding: 0;
+}
+.s-block:first-of-type {
+    margin-top: 0 !important;
+}
+/*features*/
+section.container.sodo:has(.feature) {
+    z-index: 9;
+}
+.catCard::before, .catCard::after {
+ background: rgb(3,140,218);
+background: linear-gradient(180deg, rgba(3,140,218,1) 0%, rgba(48,99,129,1) 100%);
+}
+/*bannars*/
+.s-block--fixed-banner .container {
+    max-width: 100%;
+    padding: 0;
+}
+@media (max-width:767px){
+#mainnav .sammery_icons.gap-6 {
+    gap: .5rem;
+}
+.rectangle_image .text-lg {
+    font-size: .75rem;
+    line-height: 1.75rem;
+}}
+@media (max-width:400px){
+.s-product-card-content-title a {
+    white-space: break-spaces;
+}}
+/*قصص فاتح */
+/* Add custom CSS styles below */ 
+.app-inner, .top-navbar, #mainnav{
+    background: #fcf5fd !important;
+}
+/*bannars*/
+.s-block--fixed-banner .container {
+    max-width: 100%;
+    padding: 0;
+}
+/*web site colors*/
+div#mainnav * ,.top-navbar *  ,.feature * ,salla-slider#thumbs * ,a.catCard span ,.product-index #catigory-page .main-content .icone-selector * , .product-index  .lg\:sticky * ,.product-single .main-content * ,.product-single span , .cart  .text-white ,.s-quantity-input-input{
+    color: #000 !important;
+}
+.product-single .main-content * , .cart .s-quantity-input-button svg {
+    fill: #000;
+}
+
+.start-banner  span {
+    color: #8b57a1;
+}
+nav.breadcrumbs * {
+    color: #8b57a1;
+}
+.store-footer *, .store-footer>div *, .store-footer__inner *{
+color:#000 !important; }
+/*product page*/
+select#product-filter option {
+    background-color: #ceb5d7 !important;
+}
+/*font size */
+@media (max-width:1200px){
+.rectangle_image .sm\:text-lg {
+    font-size: 1rem;
+}}
+.s-product-card-vertical, .s-product-card-horizontal {
+    background: linear-gradient(180deg, rgb(139 87 161 / 45%) 0%, rgb(139 87 161 / 23%) 100%) !important;
+}
+.store-footer .store-footer__inner ,.store-footer>div ,.store-footer{
+    background-color: #e8e6dd !important;
+}

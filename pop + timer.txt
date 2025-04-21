@@ -1,0 +1,107 @@
+/*pop + timer*/ 
+const body = document.querySelector("body");
+if (body) {
+    // Create popup container
+    const popupWrapper = document.createElement("div");
+    popupWrapper.className = "popup-overlay";
+    
+    const popupContent = document.createElement("div");
+    popupContent.className = "popup-content";
+    
+    // Create close button
+    const closeButton = document.createElement("button");
+    closeButton.className = "close-button";
+    closeButton.innerHTML = "×";
+    closeButton.onclick = function(e) {
+        e.stopPropagation();
+        popupWrapper.remove();
+        clearInterval(timer);
+    };
+    
+    // Create coupon container
+    const couponContainer = document.createElement("div");
+    couponContainer.className = "coupon-container";
+    
+    // Create and add image
+    const imageDiv = document.createElement("div");
+    imageDiv.className = "coupon-image";
+    const image = document.createElement("img");
+    image.src = "https://cdn.salla.sa/form-builder/vMbGlqwqPSwpkRB8hwbfcxtkaAbQjdFQwOGk7hrL.png";
+    image.alt = "Coupon Image";
+    imageDiv.appendChild(image);
+    
+    // Create and add image
+    const imageDiv1 = document.createElement("div");
+    imageDiv1.className = "coupon-image";
+    const image1 = document.createElement("img");
+    image1.src = "https://i.ibb.co/MS609vX/Whats-App-Image-2025-01-02-at-2-46-56-PM.jpg";
+    image1.alt = "Coupon Image";
+    imageDiv1.appendChild(image1);
+    
+    const header = document.createElement("div");
+    header.className = "coupon-header";
+    header.textContent = "حياك االله في هيلثي قروب";
+    
+    const subheader = document.createElement("div");
+    subheader.className = "coupon-subheader";
+    subheader.textContent = "اكتشف عروض الشتاء ووفّر 50٪ على مشترياتك الآن!";
+    
+    // Create countdown timer
+    const timerDiv = document.createElement("div");
+    timerDiv.className = "countdown-timer";
+    
+    // Function to set/reset end date to 5 days from current time
+    function setNewEndDate() {
+        const endDate = new Date();
+        endDate.setDate(endDate.getDate() + 5);
+        return endDate;
+    }
+    
+    // Initialize end date
+    let endDate = setNewEndDate();
+    
+    // Update countdown every second
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        timerDiv.innerHTML = `${days} يوم ${hours} ساعة ${minutes} دقيقة ${seconds} ثانية`;
+        
+        // When timer ends, reset it for another 5 days
+        if (distance < 0) {
+            endDate = setNewEndDate();
+        }
+    }, 1000);
+    
+    // Append elements
+    couponContainer.appendChild(imageDiv);
+    couponContainer.appendChild(header);
+    couponContainer.appendChild(subheader);
+    couponContainer.appendChild(imageDiv1);
+    couponContainer.appendChild(timerDiv);
+    
+    popupContent.appendChild(closeButton);
+    popupContent.appendChild(couponContainer);
+    popupWrapper.appendChild(popupContent);
+    document.body.appendChild(popupWrapper);
+    
+    // Add click event to close popup when clicking outside
+    popupWrapper.addEventListener("click", function(e) {
+        if (e.target === popupWrapper) {
+            popupWrapper.remove();
+            clearInterval(timer);
+        }
+    });
+    
+    // Prevent popup from closing when clicking inside
+    popupContent.addEventListener("click", function(e) {
+        e.stopPropagation();
+    });
+} else {
+    console.error("العنصر المستهدف غير موجود");
+}

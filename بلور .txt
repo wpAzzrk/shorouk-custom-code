@@ -1,0 +1,99 @@
+/* Add custom CSS styles below */ 
+.app-inner {
+    overflow: hidden;
+}
+html {
+    overflow-x: hidden;
+}
+.index .main-nav-container:not(.main-nav-container.fixed-pinned.animated.fixed-header) img {
+        max-width: 100px;
+        opacity: 0;
+        max-height: 5rem;
+    }
+@media (min-width: 768px) {
+.index .main-nav-container:not(.main-nav-container.fixed-pinned.animated.fixed-header)    img {
+        max-width: 273px;
+        opacity: 0;
+        max-height: 9rem;
+    }
+}
+.landing-page-fixed-bannar *{
+color:#055F82}
+@media (max-width:767px){
+section.landing-page-fixed-bannar {
+    gap: 10px;
+}
+section.landing-page-fixed-bannar .text-\[30px\] {
+    font-size: 24px;
+}
+.landing-page-fixed-bannar p {
+display:none}}
+/*categories*/
+.content-image {
+    justify-content: center;
+}
+.cat {
+    width: 30%;
+    overflow: hidden;
+    height: 325px;
+    max-height: 325px !important;
+}
+@media (max-width:767px){
+.cat {
+    overflow: hidden;
+    height: 150px;
+    max-height: 150px !important;
+}
+.box-text-cat {
+    padding-right: 10px;
+    padding-top: 3px;
+}
+.products-item .text-\[17px\] {
+    font-size: 15px;
+}
+}
+@media (max-width: 420px) {
+    .content-image div.cat {
+        width: calc(50% - 24px);
+    }
+}
+.cat:first-of-type, .cat:nth-of-type(5),.cat:nth-of-type(6){
+display:none}
+/*products */
+section.s-block--best-offers {
+    margin-bottom: 2rem;
+}
+/*offers*/
+.offers > h2 , .offers .text-\[var\(--d-color\)\],.box-text-cat >a p ,.box-text-cat >a h2 {
+    color: rgba(255, 255, 255, 1);
+}
+/*image-text*/
+.image-text .text-\[var\(--vd-color\)\] {
+    color: #000;
+}
+/*gif-banner */
+.gif-banner .gif-video {
+    left: -5%;
+    scale: 1.2;
+}
+/*numbers*/
+.numbers .text-\[var\(--vd-color\)\] {
+    color: #29c5f2;
+}
+@media (max-width: 600px) {
+    .numbers .products {
+        grid-template-columns: repeat(2, minmax(190px, 1fr));
+    }
+}
+/*section_c_r*/
+@media (min-width: 1024px) {
+  .section_c_r  .lg\:text-title-size {
+        line-height: 3rem;
+        margin-bottom: 0;
+    }
+}
+/*footer*/
+@media (max-width:767px){
+.store-footer .text-justify {
+    text-align: center;
+}}
