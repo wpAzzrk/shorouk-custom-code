@@ -1,107 +1,190 @@
-/*pop + timer*/ 
-const body = document.querySelector("body");
+/*popup */.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.coupon-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.coupon-header {
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.coupon-subheader {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown-timer .time-box {
+    background-color: rgba(231, 76, 60, 0.1);
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 60px;
+}
+
+.countdown-timer .time-box span.value {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+} .countdown-timer .time-box span.label {
+    font-size: 12px;
+    color: #555;
+}@media (max-width: 480px) {
+    .coupon-header {
+        font-size: 18px;
+    }
+    .coupon-subheader {
+        font-size: 14px;
+    }
+    .countdown-timer .time-box span.value {
+        font-size: 16px;
+    }.coupon-image img {
+    max-width: 180px;margin:auto
+}.popup-content {
+    max-width: 70%;
+}.countdown-timer {
+    gap: 5px;
+}
+ .countdown-timer .time-box {
+    padding: 5px 10px;
+    min-width: 45px;
+}
+ 
+}// ========== Popup with Timer ==========
+
+document.addEventListener("DOMContentLoaded", function () {
+  const body = document.querySelector("body");
 if (body) {
-    // Create popup container
     const popupWrapper = document.createElement("div");
     popupWrapper.className = "popup-overlay";
-    
+
     const popupContent = document.createElement("div");
     popupContent.className = "popup-content";
-    
-    // Create close button
+
     const closeButton = document.createElement("button");
     closeButton.className = "close-button";
     closeButton.innerHTML = "×";
-    closeButton.onclick = function(e) {
+    closeButton.onclick = function (e) {
         e.stopPropagation();
         popupWrapper.remove();
         clearInterval(timer);
     };
-    
-    // Create coupon container
+
     const couponContainer = document.createElement("div");
     couponContainer.className = "coupon-container";
-    
-    // Create and add image
+
     const imageDiv = document.createElement("div");
     imageDiv.className = "coupon-image";
     const image = document.createElement("img");
-    image.src = "https://cdn.salla.sa/form-builder/vMbGlqwqPSwpkRB8hwbfcxtkaAbQjdFQwOGk7hrL.png";
+    image.src = "https://cdn.salla.sa/form-builder/yM8OtRZL1PMbvsEi4ZTLa3tkpH3kSdG6iwDcNJFC.jpg";
     image.alt = "Coupon Image";
     imageDiv.appendChild(image);
-    
-    // Create and add image
-    const imageDiv1 = document.createElement("div");
-    imageDiv1.className = "coupon-image";
-    const image1 = document.createElement("img");
-    image1.src = "https://i.ibb.co/MS609vX/Whats-App-Image-2025-01-02-at-2-46-56-PM.jpg";
-    image1.alt = "Coupon Image";
-    imageDiv1.appendChild(image1);
-    
+
     const header = document.createElement("div");
     header.className = "coupon-header";
-    header.textContent = "حياك االله في هيلثي قروب";
-    
+    header.textContent = "نكتب لاتفوت خصومات الصيف";
+
     const subheader = document.createElement("div");
     subheader.className = "coupon-subheader";
-    subheader.textContent = "اكتشف عروض الشتاء ووفّر 50٪ على مشترياتك الآن!";
-    
-    // Create countdown timer
+    subheader.textContent = "كود خصم lava 5";
+
     const timerDiv = document.createElement("div");
     timerDiv.className = "countdown-timer";
-    
-    // Function to set/reset end date to 5 days from current time
+
     function setNewEndDate() {
         const endDate = new Date();
-        endDate.setDate(endDate.getDate() + 5);
+        endDate.setDate(endDate.getDate() + 2);
         return endDate;
     }
-    
-    // Initialize end date
+
     let endDate = setNewEndDate();
-    
-    // Update countdown every second
-    const timer = setInterval(function() {
+
+    const timer = setInterval(function () {
         const now = new Date().getTime();
         const distance = endDate - now;
-        
+
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        timerDiv.innerHTML = `${days} يوم ${hours} ساعة ${minutes} دقيقة ${seconds} ثانية`;
-        
-        // When timer ends, reset it for another 5 days
+
         if (distance < 0) {
-            endDate = setNewEndDate();
+            clearInterval(timer);
+            timerDiv.innerHTML = `<div class="time-box"><span class="value">انتهى</span><span class="label">العرض</span></div>`;
+        } else {
+            timerDiv.innerHTML = `
+                <div class="time-box"><span class="value">${days}</span><span class="label">يوم</span></div>
+                <div class="time-box"><span class="value">${hours}</span><span class="label">ساعة</span></div>
+                <div class="time-box"><span class="value">${minutes}</span><span class="label">دقيقة</span></div>
+                <div class="time-box"><span class="value">${seconds}</span><span class="label">ثانية</span></div>
+            `;
         }
     }, 1000);
-    
-    // Append elements
+
     couponContainer.appendChild(imageDiv);
     couponContainer.appendChild(header);
     couponContainer.appendChild(subheader);
-    couponContainer.appendChild(imageDiv1);
     couponContainer.appendChild(timerDiv);
-    
+
     popupContent.appendChild(closeButton);
     popupContent.appendChild(couponContainer);
     popupWrapper.appendChild(popupContent);
     document.body.appendChild(popupWrapper);
-    
-    // Add click event to close popup when clicking outside
-    popupWrapper.addEventListener("click", function(e) {
+
+    popupWrapper.addEventListener("click", function (e) {
         if (e.target === popupWrapper) {
             popupWrapper.remove();
             clearInterval(timer);
         }
     });
-    
-    // Prevent popup from closing when clicking inside
-    popupContent.addEventListener("click", function(e) {
+
+    popupContent.addEventListener("click", function (e) {
         e.stopPropagation();
     });
 } else {
     console.error("العنصر المستهدف غير موجود");
 }
+});
