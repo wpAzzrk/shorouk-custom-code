@@ -1,0 +1,1570 @@
+/*adfz codeee*/
+:root {
+    --main-color:#041c6c;
+    --second-color: #3153c5;
+    --third-color: #ffffff;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+.container {
+    width: 100vw; 
+    max-width:100% ; 
+}
+
+@media (min-width: 1280px) {
+
+h3,a,span {
+    font-size: 1.1em !important; 
+  }
+
+  p,i {
+    font-size: 1.1em !important; 
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 100% !important;
+  
+
+  }
+}
+
+body {
+    background: #ffffff;
+    background-size: 100%;
+    background-position: center center;
+    width:100%;
+    background-repeat: repeat;
+    position: relative;
+    box-sizing: border-box;
+}
+.banner--fixed img:nth-child(1) {
+    transform: scale(0.6); /* تصغير الصورة عند بداية تحميل الصفحة */
+    opacity: 0; /* إخفاء الصورة */
+    transition: transform 5s ease, opacity 1s ease; /* تحديد مدة الحركة */
+  }
+  
+  .banner--fixed img:nth-child(1).show {
+    transform: scale(1); /* تكبير الصورة إلى حجمها الطبيعي */
+    opacity: 1; /* جعل الصورة تظهر */
+  }
+.s-block {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+
+}
+
+.s-contacts-header {
+    display: none;
+}
+
+.s-social-list {
+    justify-content: center;
+}
+
+#page-main-title {
+    color: var(--main-color) !important;
+    border-bottom: solid 2px var(--main-color);
+
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--second-color) !important;
+}
+
+#product-filter {
+    background-color: var(--second-color) !important;
+    color: var(--main-color);
+}
+
+.s-products-slider-card:hover {
+    scale: 1.02;
+}
+
+.s-products-slider-card {
+    transition-duration: 0.4s;
+    transition-property: scale;
+}
+
+.banner--fixed img {
+    background-color: transparent !important;
+    width: 100%;
+}
+
+.banner--fixed {
+    position: relative;
+
+}
+
+.banner--fixed img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Removes bottom space */
+
+}
+
+
+.banner--fixed::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    animation: glowing 7s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+@keyframes glowing {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translate(50%, 50%) rotate(180deg);
+        opacity: 1.9;
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+        opacity: 1.9;
+    }
+}
+
+.navbar-brand img {
+    max-height: 3.4rem;
+    width: auto;
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.03);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+body:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999;
+    background: url(https://cdn.salla.sa/AzEnbP/4dbcoCzx7CTHP5Hp2Pl9RjH97D2FMK6mtROSLAC0.png);
+    left: 0;
+    backdrop-filter:blur(15px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+    animation-name: fade-in;
+    animation-duration: 3.4s;
+    transform: scale(0);
+    border: none;
+}
+
+.store-footer a h3:nth-child(1) {
+    font-size: 1.4rem;
+    color: transparent;
+    background-image: url(https://cdn.salla.sa/AzEnbP/4dbcoCzx7CTHP5Hp2Pl9RjH97D2FMK6mtROSLAC0.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    scale: 1.7;
+    background-position: center;
+    background-color: transparent;
+    padding: 20px 10px 20px 10px;
+    animation: shake 18s ease-in-out infinite;
+
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+}
+
+
+
+.main-content h1 {
+    color: var(--main-color) !important;
+}
+
+.total-price {
+    color: black !important;
+}
+
+.square-photos {
+    background-color: transparent !important;
+    animation: shake 13s infinite;
+    width: 100%;
+    transition-duration: 0.5s;
+    transition-property: scale;
+    border-radius: 30px;
+    height: 210px;
+}
+
+
+.has-overlay:after {
+    background-color: rgba(52, 29, 29, 0.419) !important;
+
+}
+
+/* NavBar start */
+.right-side {
+    color: var(--main-color) !important;
+}
+
+.s-menu-topnav-list {
+    padding: 15px;
+    box-shadow: 0 3px 6px 0 rgba(1, 1, 1, 0.503), 0 6px 20px 0 rgba(1, 1, 1, 0.214);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.s-search-input {
+    background-color: white !important;
+    box-shadow: 0 3px 6px 0 rgba(1, 1, 1, 0.503), 0 6px 20px 0 rgba(1, 1, 1, 0.214);
+}
+
+#mainnav {
+    background-color: var(--third-color) !important;
+    align-items: center;
+    display: flex;
+    font-size: 16px !important;
+    color: var(--second-color) !important;
+    box-shadow: 0 3px 6px 0 rgba(1, 1, 1, 0.503), 0 6px 20px 0 rgba(1, 1, 1, 0.214);
+
+
+
+}
+
+.sicon-menu {
+    color: var(--second-color) !important;
+}
+
+.inner {
+    width: 100%;
+}
+
+.navbar-brand {
+    background-color: transparent;
+}
+
+.main-menu li a:hover {
+    color: var(--second-color) !important;
+}
+
+.main-menu li a {
+    font-size: 18px !important;
+    color: var(--main-color) !important;
+}
+
+.sicon-user-circle {
+    color: var(--third-color) !important;
+}
+
+
+#mobile-menu {
+    color: var(--second-color) !important;
+    background-color: var(--third-color) !important;
+}
+
+.mm-spn--open {
+    background-color: var(--third-color) !important;
+}
+
+.mm-spn a {
+    color: var(--second-color) !important;
+}
+
+
+.s-search-icon svg {
+    fill: var(--main-color);
+}
+
+.s-search-input {
+    color: var(--main-color);
+}
+
+::placeholder {
+    color: var(--main-color) !important;
+}
+
+
+.header-btn__icon {
+    border: none;
+    color: var(--main-color) !important;
+}
+
+.s-cart-summary-total {
+    color: var(--main-color) !important;
+}
+
+.s-slider-block__title-right h2 {
+    display: none !important;
+    color: var(--main-color) !important;
+    border-bottom: solid 2px var(--main-color);
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #8fffcc !important;
+}
+
+.s-slider-block__display-all {
+    color: var(--main-color) !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    #mainnav {
+        font-size: 14px
+    }
+}
+
+@media (min-width: 1024px) {
+    .rtl\:lg\:pl-20:where([dir=rtl], [dir=rtl] *) {
+        padding-left: 0rem;
+    }
+}
+
+/* NavBar End */
+
+/* Sections Strat */
+.swiper-pagination {
+    display: none;
+}
+
+.slide--cat-entry i {
+    content: "\ec0b";
+    color: var(--main-color);
+}
+
+
+.square-photos:hover {
+    scale: 1.07;
+
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-entry h3.text-with-border {
+    border: none;
+}
+
+.s-block--banners container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.slide--cat-entry h4 {
+    color: var(--second-color);
+}
+
+.s-slider-block__title {
+    color: var(--main-color);
+}
+
+.s-block__title {
+    color: var(--main-color);
+}
+
+
+/* Sections End */
+
+/* Product start */
+
+.s-products-slider-card {
+    padding: 0.625rem;
+}
+
+.s-product-card-image img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none!important;
+
+}
+
+.s-product-card-price {
+    font-size: 16px;
+    color: var(--third-color);
+}
+
+.s-product-card-vertical .s-product-card-wishlist-btn button {
+    background-color: var(--second-color) !important;
+    color: var(--third-color);
+}
+
+strong {
+    color: var(--main-color) !important;
+}
+
+small {
+    color: var(--main-color) !important;
+}
+
+.s-button-primary {
+    background-color: var(--main-color) !important;
+    color: var(--second-color) !important;
+}
+
+.s-product-card-vertical .s-product-card-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.s-product-card-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: transparent !important;
+}
+
+.product__description {
+    color: var(--main-color) !important;
+}
+
+.s-product-card-content-main {
+    text-align: center;
+
+}
+
+.s-product-card-content {
+    background-color: transparent !important;
+    color: var(--main-color) !important;
+
+}
+
+.s-product-card-content-title a {
+    color: var(--third-color);
+}
+
+.s-product-card-content-sub {
+    justify-content: center;
+}
+
+.s-product-card-content {
+    padding: .75rem .75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-product-card-content-footer {
+    background-color: var(--main-color) !important;
+    color: var(--main-color);
+
+    border-radius: 20px;
+}
+
+.s-button-outline {
+    border-radius: 50px;
+    border-color: transparent;
+}
+
+.s-product-card-entry {
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.468);
+    height: 430px;
+    position: relative;
+    perspective: 1000px;
+
+
+}
+
+.s-product-card-entry:hover {
+    animation: flip 1s ease-in-out;
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
+    transform: scale(1.04);
+    box-shadow: 0 0 15px rgba(1, 1, 1, 0.4);
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(30deg);
+    }
+
+    50% {
+        transform: rotateY(-30deg);
+    }
+
+    75% {
+        transform: rotateY(15deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+.s-button-primary-outline {
+    color: var(--third-color);
+    background-color: var(--second-color);
+}
+
+
+
+
+
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(20px);
+    }
+}
+
+
+
+
+@keyframes pulse {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sicon-headphones {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+
+
+.s-block--features__item {
+    background-color: transparent !important;
+    font-size: 30px !important;
+    color: #CF5D8F !important;
+    transition-duration: 0.4s;
+    transition-property: scale;
+    border-radius: 30px;
+    width: 80%
+}
+
+/* Product End */
+#featured-products-style2-11 {
+    background-color: transparent !important;
+}
+
+/* Footer Start */
+
+
+.store-footer {
+    background: #ffffff !important;
+    background-size: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: var(--main-color);
+    position: relative;
+    overflow: hidden;
+    animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        box-shadow: 0 3px 6px 0 rgba(102, 15, 86, 0.333), 0 6px 20px 0 rgba(5, 78, 169, 0.262);
+    }
+
+    50% {
+        box-shadow: 0 3px 6px 0 rgba(102, 15, 86, 0.333), 0 6px 20px 0 rgba(5, 78, 169, 0.262);
+       
+    }
+
+    100% {
+        box-shadow: 0 3px 6px 0 rgba(102, 15, 86, 0.333), 0 6px 20px 0 rgba(220, 220, 220, 0.262);
+    }
+}
+
+.footer-is-light .store-footer .store-footer__inner {
+    background-color: transparent ;
+}
+
+.store-footer__inner {
+    background-color: transparent !important;
+    text-align: center;
+    margin: auto;
+}
+
+.store-footer__inner .flex {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-footer__inner .max-w-sm {
+    margin: auto;
+    color: var(--main-color);
+}
+
+.store-footer h3 {
+    background-color: var(--second-color);
+    /* Semi-transparent background color */
+    color: var(--third-color);
+    font-size: 1.3rem;
+    /* Maintaining original font size */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.s-contacts-list {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.store-footer h3:hover {
+
+    transform: scale(1.1);
+}
+
+.store-footer p {
+    color: var(--main-color);
+    font-size: 1rem;
+    margin: 15px 0;
+    line-height: 1.6;
+    transition: transform 0.3s ease;
+}
+
+.store-footer p:hover {
+    transform: translateY(-5px);
+}
+
+.store-footer a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.store-footer a:hover {
+    color: var(--main-color);
+    text-shadow: 0 0 5px var(--second-color);
+    transform: scale(1.1);
+}
+
+.store-footer i {
+    color: var(--third-color);
+    border-color: var(--main-color);
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+}
+
+.store-footer i:hover {
+    transform: rotate(360deg);
+}
+
+.store-footer::after {
+    content: "برمجة وتطوير ADFAZ";
+    position: relative;
+    top: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    color: var(--third-color) !important;
+    margin-top: 20px;
+}
+
+.copyright-text p {
+    color: var(--main-color);
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+@media (max-width: 768px) {
+
+    .store-footer h3 {
+        font-size: 1.3rem;
+    }
+
+    .store-footer p {
+        font-size: 0.9rem;
+    }
+
+    .store-footer::after {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .store-footer h3 {
+        font-size: 15px !important;
+
+    }
+    .s-products-list-vertical-cards {
+        grid-template-columns: repeat(1, minmax(0, 1fr)); 
+        gap: 0.625rem;
+        width:70%;
+        margin: auto;
+      }
+    .gap-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .s-menu-topnav-list {
+        padding: 0;
+        box-shadow: none;
+    }
+}
+
+.copyright-text p {
+    color: var(--main-color) !important;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.store-footer::after {
+    animation: shake 3s infinite;
+    content: "برمجة وتطوير   ADFAZ" !important;
+    top: 0px;
+    font-size: 16px;
+    opacity: 0.8;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    color: var(--main-color) !important;
+    padding: 10px;
+    background-color: var(--third-color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 200px;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.s-contacts-icon {
+    border-color: 1px solid var(--main-color) !important;
+}
+
+
+.s-contacts-title a:hover {
+    color: black !important;
+}
+
+.grid-col-1 {
+    flex-direction: column;
+
+}
+
+label {
+    color: var(--main-color);
+}
+
+.store-footer h3:hover {
+    opacity: 1;
+
+}
+
+button:hover {
+    color: var(--second-color) !important;
+    background-color: var(--third-color) !important;
+}
+
+#wa-widget-send-button {
+    display: none !important;
+}
+
+.content--single-page {
+    color: var(--main-color) !important;
+}
+
+.content--single-page {
+    background-color: transparent !important;
+}
+
+li {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+        0 0 20px rgba(235, 204, 231, 0.2),
+        0 0 30px rgba(255, 187, 238, 0.2);
+}
+
+.lazy__bg {
+    position: absolute;
+    width: 100%;
+}
+
+.gap-3 {
+    gap: 0rem;
+}
+
+.gap-3>div:first-child {
+    width: 100%;
+    height: 210px !important;
+}
+
+.s-breadcrumb-wrapper {
+    color: var(--main-color) !important;
+}
+
+
+
+
+
+.s-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#featured-products-style2-2 {
+    background-color: var(--third-color) !important;
+}
+.s-product-card-entry {
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffff);
+    padding: 0px;
+    margin: 10px;
+    border-radius: 10.5%;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.368);
+    height: 350px;
+    position: relative;
+    overflow:hidden;
+}
+
+.s-product-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0%;
+    transition: transform 0.3s ease;
+}
+
+.s-product-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+        border-radius: 10%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(https://i.ibb.co/n3CvDDX/Artboard-118-copy-2.png)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: transform 0.5s ease;
+    
+}
+
+.s-product-card-content-sub {
+    margin-bottom: 0.25rem!important;}
+    
+    .s-slider-block__display-all {
+     color: var(--main-color);
+     margin-left: 30px !important;
+     margin-top: 0px !important;
+     margin-top: 0px !important;
+      border-radius: 12px;
+      background-color:var(--second-color);
+     display:none;
+   padding: 15px 10px 15px 10px;
+    line-height: 0px!important;
+
+
+    }
+
+header.store-header:before {
+    content: '';
+    background: url(https://iili.io/dPw3oqg.png);
+    background-position-x: 0;
+    animation: scrollBrands 1100s linear infinite;
+    display: block;
+    background-color: var(--main-color);
+    z-index: 9999999999999999
+}
+
+@keyframes scrollBrands {
+    0% {
+        background-position-x: 0
+    }
+
+    50% {
+        background-position-x: 35000px
+    }
+
+    100% {
+        background-position-x: 0
+    }
+}
+
+@media(max-width: 767px) {
+    header.store-header:before {
+        background-size: 180%;
+        height: 39px;
+        background-position: center;
+        margin-bottom: -2px;
+    }
+}
+
+@media(min-width: 767px) {
+    header.store-header:before {
+        background-size: 110%;
+        height: 80px;
+        background-position: center;
+        margin-bottom: -2px;
+    }
+}
+
+.s-product-card-content-title a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+
+}
+
+.two-row .banner-entry:first-child {
+    height: auto;
+}
+.banner {
+    transition: transform 1s ease-in-out;
+  }
+
+  .banner:hover {
+    transform: scale(1.04); 
+  }
+  
+.questions-block {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.000001), rgba(0, 53, 153, 0.000001));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
+.s-block_title_container {
+  color: white;
+}
+
+.main-title h5 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  transition: color 0.3s ease;
+  animation: glowingText 3.5s infinite alternate;
+}
+
+.subtitle {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.question-item {
+  margin: 10px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.question-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, var(--main-color), var(--second-color));
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .question:hover {
+    background: linear-gradient(to right, var(--main-color), var(--second-color));
+    background-color: rgb(6, 106, 68); /* لتغيير لون الخلفية عند التحويم */
+  }
+  
+.question i {
+  transition: transform 0.3s ease;
+}
+
+.question.open i {
+  transform: rotate(180deg);
+}
+
+.answer {
+  padding: 15px;
+  background-color: #f8f9fa;
+  color: #000000;
+  display: none;
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.answer.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flex.justify-center.items-center.w-full.mt-10 p {
+  background-color: white;
+  height: 2px;
+  width: 60px;
+  border-radius: 5px;
+}
+@keyframes glowingText {
+    0% {
+      text-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 15px var(--main-color), 0 0 20px var(--main-color);
+      color: var(--main-color);
+    }
+    50% {
+      text-shadow: 0 0 15px var(--main-color), 0 0 25px var(--main-color), 0 0 35px var(--main-color), 0 0 50px var(--main-color);
+      color: var(--main-color);
+    }
+    100% {
+      text-shadow: 0 0 5px var(--main-color), 0 0 10px var(--main-color), 0 0 15px var(--main-color), 0 0 20px var(--main-color);
+      color: var(--main-color);
+    }
+  }
+========================================================================================================
+.banner--fixed img{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.banner--fixed img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media only screen and (max-width: 600px) {
+    .store-footer__inner h3 {
+        font-size: 14px !important;
+    }
+
+    .s-product-card-entry {
+        height: 290px;
+    }
+
+    .square-photos {
+        width: 100%;
+        transition-duration: 0.5s;
+        transition-property: scale;
+        border-radius: 0px;
+        height: 4.7rem;
+    }
+}
+.s-social-link a svg {
+    height: 1.475rem;
+    width: 1.475rem;
+    fill: currentColor;
+    border:none!important;
+}
+.s-social-icon{   
+    font-size:22px!important;
+  border: 1px solid #582c00; 
+  border-radius: 50%; 
+  padding: 5px; 
+}
+
+.momyzat-btn {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #041c6c;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: floatBtnAnimation 2s infinite ease-in-out;
+    z-index:9999;
+}
+
+.momyzat-btn:hover {
+    background-color: #FF6F00;
+    transform: scale(1.1);
+}
+
+@keyframes floatBtnAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* نافذة العبارات */
+.momyzat-popup {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    animation: popupSlideUp 0.5s ease-in-out;
+    z-index:99999999999;
+}
+
+.momyzat-popup.active {
+    display: block;
+}
+
+.momyzat-popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.momyzat-popup .close-btn:hover {
+    color: #FF6F00;
+}
+
+@keyframes popupSlideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.momyzat-popup .popup-content {
+    text-align: center;
+}
+
+.momyzat-popup .popup-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    animation: haraka 3s infinite ease-in-out;
+}
+
+.momyzat-popup .popup-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.momyzat-popup .popup-content ul li {
+    margin: 5px 0;
+}
+
+/* إيموجيز تنط */
+@keyframes haraka {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.momyzat-btn {
+    font-size: 16px;
+}
+
+.momyzat-popup a {
+    color: #FF6F00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+/*js*/
+const floatButton = document.createElement('button');
+floatButton.classList.add('momyzat-btn');
+floatButton.innerText = "أهم ما يميزنا 🌟";
+document.body.appendChild(floatButton);
+
+const popupWindow = document.createElement('div');
+popupWindow.classList.add('momyzat-popup');
+popupWindow.innerHTML = `
+    <div class="popup-content">
+        <h3> مرحبًا بك في متجر AAJ STORE ! 🛒</h3>
+        <ul>
+            <li>الشحن مجاني لجميع الطلبات 🚚</li>
+            <li>طرق دفع متعددة وآمنة 💳</li>
+            <li>منتجات مميزة بأسعار منافسة 💡</li>
+            <li>أفضل العروض والخصومات الحصرية 🎉</li>
+            <li>توصيل سريع وخدمة عملاء متميزة ⏱️</li>
+        </ul>
+        <a href="#" class="close-btn">❌</a>
+    </div>
+`;
+document.body.appendChild(popupWindow);
+
+floatButton.addEventListener('click', () => {
+    popupWindow.classList.toggle('active');
+});
+
+const closeButton = popupWindow.querySelector('.close-btn');
+closeButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    popupWindow.classList.remove('active');
+});
+
+
+window.onload = function() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      body {
+        position: relative;
+      }
+  
+      #popup {
+        content: "🛒 نحن متجر AAJ STORE نحن هنا لنوفر لك أفضل المنتجات 🛍️✨";
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:#041c6c;
+        color:#ffffff;
+        padding: 15px 25px;
+        border-radius: 12px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        display: none;
+        text-align: center;
+        max-width: 80%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        z-index:99999999999;
+      }
+  
+      #popup.show {
+        display: block;
+        animation: fadeInOut 7s ease-in-out forwards;
+      }
+  
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+          transform: translateX(-50%) translateY(-20px);
+        }
+        20% {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+        80% {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(-50%) translateY(20px);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  
+    const popup = document.createElement('div');
+    popup.id = 'popup';
+    popup.textContent = "🛒 نحن متجر AAJ STORE  نحن هنا لنوفر لك أفضل المنتجات 🛍️✨";
+    document.body.appendChild(popup);
+  
+    setTimeout(() => {
+      popup.classList.add('show');
+  
+      setTimeout(() => {
+        popup.classList.remove('show');
+      }, 7000);
+    }, 4000);
+  };
+  
+
+  const section = document.querySelector('#app > div.app-inner.flex.flex-col.min-h-full > section.s-block.s-block--categories');
+  
+  const faqData = [
+    {
+      question: "هل هناك توصيل لدول الخليج؟",
+      answer: "نعم نوفر الشحن لكل دول الخليج وبأسعار مغرية"
+    },
+    {
+      question: "هل يمكن ارجاع المنتج في حالة لم يعجبني؟",
+      answer: "نعم ندعم في متجرنا سياسة الاسترجاع بشرط أن لا تتجاوز المدة 10 أيام من استلام المنتج"
+    },
+    {
+      question: "هل منتجاتكم أصلية؟",
+      answer: "أكيد نحن نفخر بأن منتجاتنا أصلية وذات جودة عالية"
+    }
+  ];
+  
+  if (section) {
+    section.innerHTML = '';
+  
+    let questionsHTML = faqData.map(({ question, answer }) => `
+      <div class="question-item">
+        <div class="question standard-question-item-bg-color">
+          <h6>${question}</h6>
+          <i class="sicon-keyboard_arrow_down"></i>
+        </div>
+        <div class="answer standard-question-item-bg-color" style="display: none;">
+          <p>${answer}</p>
+        </div>
+      </div>
+    `).join('');
+  
+    section.innerHTML = `
+      <section class="questions-block standard" 
+               style="--questions-bg-color: ; --title-color: ; --subtitle-color: ; --title-bg-color: #ffffff; --questions-bg-opacity: 50; --questions-bg-blur: 10px; --question-item-bg-color: #000000; --question-item-bg-opacity: 100; --question-item-bg-blur: 0px; --questions-bg-img:url('')">
+          <div class="questions_container">
+              <div class="s-block_title_container">
+                  <div class="right-side relative w-full z-2">
+                      <div class="main-title">
+                          <h5>الأسئلة الشائعة</h5>
+                      </div>
+                      <p class="subtitle"></p>
+                  </div>
+              </div>
+              <div class="relative py-10">
+                  <div class="question_content">
+                      ${questionsHTML}
+                  </div>
+              </div>
+          </div>
+          <div class="flex justify-center items-center w-full mt-10">
+              <p class="h-2 w-20 bg-color-primary"></p>
+          </div>
+      </section>
+    `;
+  
+    const script = document.createElement('script');
+    script.textContent = `
+      document.querySelectorAll('.question-item .question').forEach(question => {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          const isVisible = answer.style.display === 'block';
+          
+          document.querySelectorAll('.answer').forEach(a => a.style.display = 'none');
+          
+          answer.style.display = isVisible ? 'none' : 'block';
+        });
+      });
+    `;
+    section.appendChild(script);
+  } else {
+    console.warn('العنصر المطلوب غير موجود في الصفحة.');
+  }
+  
+  document.addEventListener("DOMContentLoaded", function() {
+      const elements = document.querySelectorAll('.banner--fixed img');
+      
+      function handleScroll() {
+          const windowHeight = window.innerHeight;
+          
+          elements.forEach(element => {
+              const rect = element.getBoundingClientRect();
+              if (rect.top <= windowHeight * 0.8) {
+                  element.classList.add('visible');
+              }
+          });
+      }
+  
+      window.addEventListener('scroll', handleScroll);
+      handleScroll();
+  });
