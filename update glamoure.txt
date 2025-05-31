@@ -126,3 +126,150 @@ justify-content: center;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*NEWW*/
+/* Add custom CSS styles below */ 
+.top-navbar {
+    display: none;
+}
+/*cats*/
+.g_cat .mb-\[55px\] {
+  margin: 2rem auto !important;
+}
+.g_cat .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+.g_cat {
+  margin-bottom: 1rem;
+}
+.banner_ad  .text {
+    width: 100% !important;
+}
+/* offers */
+.product_deadline {
+  box-shadow: none;
+}
+
+.product_deadline {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.banner_ad .img3 {
+    DISPLAY: NONE;
+}
+.dead_line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product_deadline salla-add-product-button div {
+  height: 100%;
+}
+
+.product_deadline .data .s-button-primary {
+  color: #fff;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+.s-block--photos-slider:not(:first-of-type) {
+  margin: 2rem 0;
+}
+
+/* offers */
+.product_deadline {
+  box-shadow: none;
+}
+
+.product_deadline {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.dead_line {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.s-product-card-image-cover,
+.s-product-card-image-contain {
+  -o-object-fit: cover;
+  object-fit: cover ;
+  height: 300px;
+}
+
+.s-block--photos-slider:not(:first-of-type) {
+  margin: 2rem 0;
+}
+.image-title .title-heade {
+    background-color: #ffffff00;
+    color: #A7797D;
+}
+.copyright-text p,
+.copyright-text p a:hover {
+  color: white!important;
+}
+.s-payments-list-item {
+    background-color: white;
+}
+/*media*/
+@media (min-width: 1200px) {
+.landing-page-first-bannar .txt.container {
+    MAX-WIDTH: 98%;
+}
+.landing-page-first-bannar .txt .custom-dlay-p {
+    WIDTH: 65%;
+}
+section:nth-child(2 of.landing-page-first-bannar)  .txt .custom-dlay-heading {
+    WIDTH: 70%;
+}
+    .g_cat .swiper-wrapper{
+justify-content: center;
+}
+    .banner_ad.md\:max-h-\[700px\] {
+        max-height: 800px;
+    }
+    .banner_ad .img2 {
+    grid-row: span 2 / span 2;
+}
+    }
+    
+@media (max-width: 768px) {
+
+  .landing-page-first-bannar .container .w-full {
+  background: #FFFFFFA0;
+    padding: 1rem 1rem;
+    border-radius: 20px;
+}
+    .g_cat h3 {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+  .s-products-slider-card {
+    max-width: 215px !important;
+  }
+  .banner_ad .item-text {
+    font-size: clamp(15px, 17px + 1vw, 42px);
+    line-height: 2;
+    max-width: 100%;
+}
+    .banner_ad .img2 {
+        grid-row: span 2 / span 2;
+    }
+}
