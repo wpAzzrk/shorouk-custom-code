@@ -1,0 +1,33 @@
+/*خطوة*/
+/* Add custom CSS styles below */ 
+#sliider_theme a.slider_img2 {
+    transform: scale(1.5) rotate(360deg) !important;
+}
+#featuers .shadow-khatwa {
+    background-color: var(--color-primary);
+}
+#featuers .shadow-khatwa * {
+    color: #fff;
+}
+#image-banner .md\:h-500 {
+    background-size: cover;
+}
+#image-banner .btnCus {
+    background-color: #fff !important;
+    color: var(--color-primary);
+}
+.third-banner .md\:w-1\/2 {
+    right: 25%;
+    text-align: center;
+}
+#product-offers  .-rotate-45 {
+    --tw-rotate: 0deg;
+}
+@media (min-width:991px){
+  #image-banner .md\:text-5xl {
+    font-size: 2rem;
+}
+  .third-banner  .md\:h-500 {
+    height: 75vh;
+}
+}
