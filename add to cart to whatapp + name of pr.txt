@@ -1,0 +1,30 @@
+/*add to cart to whatapp + name of product*/
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const whatsappBase = "https://wa.me/966505701276";
+
+  document.body.addEventListener("click", function (e) {
+    const btn = e.target.closest(
+      'a.add_to_cart_button, button.add_to_cart_button, a.ajax_add_to_cart'
+    );
+
+    if (!btn) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+
+    // اسم المنتج لو موجود
+    let productName =
+      btn.getAttribute("aria-label") ||
+      btn.getAttribute("data-product_name") ||
+      btn.textContent;
+
+    const whatsappLink =
+      whatsappBase +
+      "?text=" +
+      encodeURIComponent("مرحبًا، مهتم بهذا المنتج: " + productName);
+
+    window.open(whatsappLink, "_blank");
+  });
+});
+</script>
