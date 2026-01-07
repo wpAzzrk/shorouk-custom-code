@@ -1,0 +1,242 @@
+/*create form as page in salla */
+
+<div class="container">
+  <form id="contactForm" class="myform" onsubmit="return false;">
+    <h2 id="formTitle"></h2>
+
+    <div class="form-control">
+      <label id="labelName"></label>
+      <input type="text" name="name" />
+      <small id="errorName"></small>
+    </div>
+
+    <div class="form-control">
+      <label id="labelPhone"></label>
+      <input type="tel" name="phone" />
+      <small id="errorPhone"></small>
+    </div>
+
+    <div class="form-control">
+      <label id="labelEmail"></label>
+      <input type="email" name="email" />
+      <small id="errorEmail"></small>
+    </div>
+
+    <div class="form-control">
+      <label id="labelMessage"></label>
+      <textarea name="message"></textarea>
+    </div>
+
+    <input type="hidden" name="language" id="langInput" />
+
+    <button type="button" onclick="submitForm()" id="submitBtn">
+      <span id="btnText"></span>
+      <span class="loader" id="loader"></span>
+    </button>
+
+    <div id="successMessage"></div>
+  </form>
+</div>
+
+<style>
+.myform {
+  max-width: 600px;
+  margin: auto;
+  padding: 24px;
+  border-radius: 12px;
+  color: #59441c;
+}
+h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px !important;
+    border: 1px solid #59441c !important;
+    background: #d1a95a25 !important;
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+small {
+  display: none;
+  color: red;
+  font-size: 13px;
+}
+
+.form-control.error small {
+  display: block;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #59441c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.loader {
+  display: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-inline-start: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#successMessage {
+  display: none;
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzMzbedry4mRAPl6p4y3ro1UzkSgOmBYaRQ41oSvNXIh1docnqtcbiLK7IrAFunc0CV/exec";
+
+  const isArabic =
+    document.documentElement.lang === "ar" ||
+    window.location.pathname.includes("/ar");
+
+  const texts = isArabic
+    ? {
+        dir: "rtl",
+        title: "تواصل معنا",
+        name: "الاسم",
+        phone: "رقم الجوال",
+        email: "البريد الإلكتروني",
+        message: "الاستفسار (اختياري)",
+        submit: "إرسال",
+        sending: "جاري الإرسال...",
+        success: "تم إرسال البيانات بنجاح ✅",
+        errors: {
+          name: "الاسم مطلوب",
+          phone: "رقم الجوال مطلوب",
+          email: "البريد الإلكتروني مطلوب",
+        },
+        lang: "Arabic",
+      }
+    : {
+        dir: "ltr",
+        title: "Contact Us",
+        name: "Name",
+        phone: "Phone Number",
+        email: "Email Address",
+        message: "Message (Optional)",
+        submit: "Send",
+        sending: "Sending...",
+        success: "Message sent successfully ✅",
+        errors: {
+          name: "Name is required",
+          phone: "Phone is required",
+          email: "Email is required",
+        },
+        lang: "English",
+      };
+
+  document.body.dir = texts.dir;
+  document.getElementById("formTitle").innerText = texts.title;
+  document.getElementById("labelName").innerText = texts.name;
+  document.getElementById("labelPhone").innerText = texts.phone;
+  document.getElementById("labelEmail").innerText = texts.email;
+  document.getElementById("labelMessage").innerText = texts.message;
+  document.getElementById("btnText").innerText = texts.submit;
+  document.getElementById("langInput").value = texts.lang;
+  document.getElementById("successMessage").innerText = texts.success;
+
+  document.getElementById("errorName").innerText = texts.errors.name;
+  document.getElementById("errorPhone").innerText = texts.errors.phone;
+  document.getElementById("errorEmail").innerText = texts.errors.email;
+
+  window.submitForm = function () {
+    const form = document.getElementById("contactForm");
+    const btn = document.getElementById("submitBtn");
+    const btnText = document.getElementById("btnText");
+    const loader = document.getElementById("loader");
+    const successMessage = document.getElementById("successMessage");
+
+    let valid = true;
+
+    form.querySelectorAll(".form-control").forEach((control) => {
+      const field = control.querySelector("input, textarea");
+      if (field && field.name !== "message" && !field.value.trim()) {
+        control.classList.add("error");
+        valid = false;
+      } else {
+        control.classList.remove("error");
+      }
+    });
+
+    if (!valid) return;
+
+    btn.classList.add("loading");
+    loader.style.display = "inline-block";
+    btnText.innerText = texts.sending;
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form),
+    })
+      .then((res) => {
+        if (res.ok) {
+          setTimeout(() => {
+            btn.style.display = "none";
+            successMessage.style.display = "block";
+            form.reset();
+          }, 700);
+        } else {
+          throw new Error();
+        }
+      })
+      .catch(() => {
+        btn.classList.remove("loading");
+        loader.style.display = "none";
+        btnText.innerText = texts.submit;
+        alert("Error sending data");
+      });
+  };
+
+});
+</script>
